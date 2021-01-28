@@ -1,0 +1,165 @@
+* {
+    font-family: "Roboto Slab", serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95vw;
+    background-color: #fbfcfc;
+    margin: 0rem;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer';
+    gap: 1rem;
+}
+
+header {
+    grid-area: header;
+    background-color: #ffd4da;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header > h1 {
+    margin: 1px;
+}
+
+header > img {
+    max-width: 4em;
+    padding: 1em;
+}
+
+header > img:hover {
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+@keyframes animacion {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(-1);
+    }
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav > a {
+    background-color: #c0e7e4;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+main {
+    grid-area: main;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+main > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+main > a {
+    background-color: #c0e7e4;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 1em;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #bae9df;
+    border-radius: 3px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside > p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    grid-area: footer;
+    padding-top: 1em;
+    background-color: #ffd4da;
+    text-align: center;
+    width: 100%;
+}
+
+.instagram, .maps {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    max-width: 85%;
+}
+
+fieldset > input {
+    margin: 5px;
+    border-color: #c0e7e4;
+    border-radius: 3px;
+}
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 30vw 70vw;
+        grid-template-areas:
+            'header header'
+            'nav main'
+            'aside aside'
+            'footer footer';
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-template-areas:
+            'header header header'
+            'nav main aside'
+            'footer footer footer';
+    }
+
+    aside {
+        margin-left: 0em;
+    }
+}

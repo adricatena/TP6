@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cucina di Tati</title>
+    <script src="https://kit.fontawesome.com/5b59358265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="grid-container">
+        <h1>Cucina di Tati</h1>
+        <img src="img/batidor (1).png" alt="batidor1">
+    </header>
+    <br>
+    <nav>
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="about.html">Sobre Nosotros</a>
+        <a class="nav" href="productos.html">Nuestros productos</a>
+        <a class="nav" href="register.html">Registro</a>
+        <a class="nav" href="sucursales.html">Sucursales</a>
+        <a class="nav" href="contact.html">Contacto</a>
+    </nav>
+    <br>
+
+    <main>
+        <h2>Formulario de Registro</h2>
+        <form action="show_data.html" target="_blank">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="firstname">Nombre: </label><input type="text" name="firstname" id="firstname"
+                    placeholder="Ingrese su nombre"> <br>
+                <label for="lastname">Apellido: </label><input type="text" name="lastname" id="lastname"
+                    placeholder="Ingrese su apellido"> <br><br>
+                <label for="street">Direccion: </label><input type="text" name="address" id="address"
+                    placeholder="Ingrese su dirección"> <br>
+                <label for="number">Numero: </label><input type="number" name="number" id="number"
+                    placeholder="Ingrese el numero"> <br>
+                <label for="zipcode">Código Postal: </label> <input type="text" name="zipcode" id="zipcode"
+                    placeholder="Ingrese su codigo Postal"> <br><br>
+                <label for="telefono">Telefono: </label> <input type="tel" name="telefono" id="telefono"
+                    placeholder="ingrese su telefono"> <br>
+                <label for="BirthDate">Fecha Nac.: </label> <input type="date" name="birthdate" id="birthdate">
+                <br>
+                <label for="gender">Genero: </label>
+                <input type="radio" name="gender" value="Hombre" id="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer" id="mujer">Mujer
+                <input type="radio" name="gender" value="Otro" id="otro">Otro <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos generales</legend>
+                <label for="estudios">Estudios: </label>
+                <select id="estudios" name="estudios">
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">Universitario</option>
+                    <option value="otro">Otro</option>
+                </select> <br><br>
+
+                <label for="interes">Intereses</label>
+                <input type="checkbox" name="interes1" value="recetas">Recetas
+                <input type="checkbox" name="interes2" value="noticias">Noticias
+                <input type="checkbox" name="interes3" value="articulos">Articulos
+                <input type="checkbox" name="interes4" value="lugares">Lugares <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion de Contacto</legend>
+                <label for="mail">Mail: </label> <input type="email" name="mail" id="mail"> <br><br>
+                <label for="clave">Clave: </label> <input type="password" name="clave" id="clave"> <br>
+            </fieldset>
+
+            <label for="comentarios">Comentarios:</label> <br>
+            <textarea name="comentarios" rows="10" cols="30"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </form>
+        <br>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/cucinaditati/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/arai.moreyra.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <br>
+        <p>Derechos reservados @2020</p>
+    </footer>
+</body>
+
+</html>
